@@ -1,0 +1,90 @@
+<nav class="navbar navbar-light hi">
+  <div class="container-fluid">
+    <h1 class="w">Inventory</h1>
+    <div class="d-flex">
+      <button class="btn btn-primary" class="btn btn-primary" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Add Employee</button>
+    </div>
+  </div>
+</nav>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email ID</th>
+      <th>Mobile No</th>
+      <th>Actions </th>
+      <th>Modify</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of employeeData">
+      <td>{{row.id}}</td>
+      <td>{{row.firstName}}</td>
+      <td>{{row.lastName}}</td>
+      <td>{{row.email}}</td>
+      <td>{{row.mobile}}</td>
+      <td>{{row.salary}}</td>
+
+      <td>
+        <button (click)="onEdit(row)" class="btn btn-primary mx-4" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"> Edit</button>
+        <button (click)="deleteEmployee(row)" class="btn btn-danger"> Delete</button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+      aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form [formGroup]="formValue">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name </label>
+        <input type="text" formControlName="firstName" class="form-control"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Last Name</label>
+        <input type="text" formControlName="lastName" class="form-control"
+          id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">email</label>
+        <input type="email" formControlName="email" class="form-control"
+          id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">mobile</label>
+        <input type="text" formControlName="mobile" class="form-control"
+          id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Salary </label>
+        <input type="text" formControlName="salary" class="form-control"
+          id="exampleInputPassword1">
+      </div>
+
+    </form>
+
+    <button type="button" id="cancel" class="btn btn-secondary mx-4"
+      data-bs-dismiss="offcanvas"> Close</button>
+    <button type="button" (click)="postEmployeeDetails()"
+      class="btn btn-primary mx-4">Add </button>
+    <button type="button" (click)="updateEmployeeDetails()"
+      class="btn btn-primary"> Update </button>
+
+  </div>
+
+</div>

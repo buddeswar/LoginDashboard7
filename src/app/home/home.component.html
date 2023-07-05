@@ -1,0 +1,651 @@
+
+<div class="flex-container man">
+  <div> <img src = "https://api.time.com/wp-content/uploads/2014/11/elon-musk.jpg"
+      class="small">
+  </div>
+  <div><h3 class="main">Welcome Back , Jhon<br>
+
+    </h3></div>
+  <div>
+    <div class="dom">
+      <button class="main2">
+        ✉ Message
+      </button>
+    </div>
+  </div>
+  <div>
+    <div class="dom1">
+      <button class="main1">
+        ✿ Setting
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr style="width:100%;text-align:left">
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+  <mat-tab label="Home">
+
+    <div class="back ">
+      <div class="flex-container king">
+        <div class="container1">
+          <div class="flex-container">
+            <p class="sie">
+              Summary
+            </p>
+            <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+
+                <span>Yesterday</span>
+              </button>
+              <button mat-menu-item>
+
+                <span>2 days to go </span>
+              </button>
+              <button mat-menu-item>
+
+                <span>3 days to go </span>
+              </button>
+            </mat-menu>
+
+          </div>
+
+          <h1 *ngFor="let item of numbers">
+            <h1 class="big">
+              {{item.summary}}
+            </h1>
+            <p class="mini">
+              Due Tasks
+            </p>
+            <p class="tip">
+              completed: {{item.complete}}
+            </p>
+
+          </h1>
+
+        </div>
+        <div class="container2">
+          <div class="flex-container">
+            <p class="sie">
+              Overdue
+            </p>
+            <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button>
+            </mat-menu>
+
+          </div>
+
+          <h1 *ngFor="let item of numbers">
+            <h1 class="big2">
+              {{item.Overdue}}
+            </h1>
+            <p class="mini2">
+              Tasks
+            </p>
+            <p class="tip">
+              From Yesterday: {{item. fromyesterday}}
+            </p>
+
+          </h1>
+
+        </div>
+        <div class="container3">
+          <div class="flex-container">
+            <p class="sie">
+              Issues
+            </p>
+            <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button>
+            </mat-menu>
+
+          </div>
+
+          <h1 *ngFor="let item of numbers">
+            <h1 class="big3">
+              {{item.issues}}
+            </h1>
+            <p class="mini3">
+              open
+            </p>
+            <p class="tip">
+
+              closed today: {{item.closedtoday}}
+            </p>
+
+          </h1>
+
+        </div>
+
+        <div class="container4">
+          <div class="flex-container">
+            <p class="sie">
+              Features
+            </p>
+
+            <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button>
+            </mat-menu>
+
+          </div>
+          <h1 *ngFor="let item of numbers">
+            <h1 class="big4">
+              {{item.fetures}}
+            </h1>
+            <p class="mini4">
+              proposols
+            </p>
+            <p class="tip">
+
+              Implemented: {{item.Implemented}}
+            </p>
+
+          </h1>
+        </div>
+      </div>
+      <div class="back2">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end">
+          <mat-tab label="This Week" class="er">
+            <h3 class="er">
+              Github Issues Summary
+            </h3>
+            <div class="flex-container">
+              <div class="card">
+                <p-chart type="bar" [data]="data" [options]="options"
+                  class="reduce23"></p-chart>
+              </div>
+              <div class="container5">
+                <h3 *ngFor="let item of graphdet">
+                  <h3 class="h">
+                    {{item.newissues}}
+                  </h3>
+                  <p class="jh">
+                    New Issues
+                  </p>
+                </h3>
+              </div>
+
+              <div class="container6">
+                <h3 *ngFor="let item of graphdet">
+                  <h3 class="h">
+                    {{item.closed}}
+                  </h3>
+                  <p class="jh">
+                    Closed
+                  </p>
+                </h3>
+              </div>
+            </div>
+            <div class="flex-container22">
+              <div *ngFor="let one of graphdet">
+                <p class="u">{{one.fixed}}
+                  <span class="smll">Fixed</span>
+                  <p>
+
+                  </div>
+
+                  <div>
+                    <div *ngFor="let one of graphdet">
+                      <p class="u">{{one.wontfix}}
+                        <span class="smll">wontfix</span>
+                        <p>
+
+                        </div>
+
+                      </div>
+                      <div>
+                        <div *ngFor="let one of graphdet">
+                          <p class="u">{{one.reopened}}
+                            <span class="smll">Re-opened</span>
+                            <p>
+
+                            </div>
+
+                          </div>
+                          <div>
+                            <div *ngFor="let one of graphdet">
+                              <p class="u">{{one.needs}}
+                                <span class="smll">Needs</span>
+                                <p>
+
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </mat-tab>
+
+                          <mat-tab label="Last Week" class="er">
+                            <h3 class="er">
+                              Github Issues Summary
+                            </h3>
+
+                            <div class="flex-container">
+                              <div class="card">
+                                <p-chart type="bar1" [data]="data1"
+                                  [options]="options1"
+                                  class="reduce2"></p-chart>
+                              </div>
+                              <div class="container5">
+                                <h3 *ngFor="let item of graphdet2">
+                                  <h3 class="h">
+                                    {{item.newissues1}}
+                                  </h3>
+                                  <p class="jh">
+                                    New Issues
+                                  </p>
+                                </h3>
+                              </div>
+
+                              <div class="container6">
+                                <h3 *ngFor="let item of graphdet2">
+                                  <h3 class="h">
+                                    {{item.closed1}}
+                                  </h3>
+                                  <p class="jh">
+                                    Closed
+                                  </p>
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="flex-container22">
+                              <div *ngFor="let one of graphdet2">
+                                <p class="u">{{one.fixed1}}
+                                  <span class="smll">Fixed</span>
+                                  <p>
+
+                                  </div>
+
+                                  <div>
+                                    <div *ngFor="let one of graphdet2">
+                                      <p class="u">{{one.wontfix1}}
+                                        <span class="smll">Won't Fix</span>
+                                        <p>
+
+                                        </div>
+
+                                      </div>
+                                      <div>
+                                        <div *ngFor="let one of graphdet2">
+                                          <p class="u">{{one.reopened1}}
+                                            <span class="smll">Re-opened</span>
+                                            <p>
+
+                                            </div>
+
+                                          </div>
+                                          <div>
+                                            <div *ngFor="let one of graphdet2">
+                                              <p class="u">{{one.needs1 }}
+                                                <span class="smll">needs</span>
+                                                <p>
+
+                                                </div>
+
+                                              </div>
+
+                                            </div>
+
+                                          </mat-tab>
+                                        </mat-tab-group>
+                                      </div>
+
+                                      <div class="flex-container">
+                                        <div class="background3">
+                                          <mat-tab-group animationDuration="0ms">
+                                            <mat-tab label="This Week">
+
+                                              <div
+                                                class="card flex justify-content-center">
+                                                <p-chart type="polarArea"
+                                                  [data]="data3"
+                                                  [options]="options3"
+                                                  class="reduce44"></p-chart>
+                                              </div>
+
+                                              <div class="grayback">
+                                                <div class="flex-container">
+                                                  <div
+                                                    *ngFor="let item of sidegraph1">
+                                                    <span class="big2">
+                                                      {{item.newtask1}}
+                                                    </span>
+                                                    <p class="thr">New Tasks</p>
+                                                  </div>
+                                                  <div
+                                                    *ngFor="let item of sidegraph1">
+                                                    <span class="big2">
+                                                      {{item.completedtask1}}
+                                                    </span>
+                                                    <p class="thr">
+                                                      Completed Tasks
+                                                    </p>
+                                                  </div>
+
+                                                </div>
+
+                                              </div>
+
+                                            </mat-tab>
+                                            <mat-tab label="Last Week">
+
+                                              <div
+                                                class="card flex justify-content-center">
+                                                <p-chart type="polarArea"
+                                                  [data]="data4"
+                                                  [options]="options4"
+                                                  class="reduce44"></p-chart>
+                                              </div>
+
+                                              <div class="grayback">
+                                                <div class="flex-container">
+                                                  <div
+                                                    *ngFor="let item of sidegraph2">
+                                                    <span class="big2">
+                                                      {{item.newtask2}}
+                                                    </span>
+                                                    <p class="thr">New Tasks</p>
+                                                  </div>
+                                                  <div
+                                                    *ngFor="let item of sidegraph2">
+                                                    <span class="big2">
+                                                      {{item.completedtask2}}
+                                                    </span>
+                                                    <p class="thr">
+                                                      Completed Tasks
+                                                    </p>
+                                                  </div>
+
+                                                </div>
+
+                                              </div>
+
+                                            </mat-tab>
+
+                                          </mat-tab-group>
+
+                                        </div>
+                                        <div class="background4">
+
+                                          <mat-tab-group animationDuration="0ms">
+                                            <mat-tab label="Today">
+                                              <p class="fom">Schedule</p>
+                                              <div *ngFor="let item of meeting">
+                                                <span class="sml ">{{item[0]}}
+                                                </span><br>
+                                                <div class="flex-container">
+
+                                                  <span class="time">🕒</span>
+                                                  <span class="sml2">{{item[1]}}</span>
+                                                  <span class="blo">🌏</span><span
+                                                    class="sml2">{{item[2]}}
+                                                  </span>
+                                                  <button class="btn">
+                                                    >
+                                                  </button>
+                                                </div>
+
+                                                <hr
+                                                  style="width:80%;text-align:left;margin-left:0">
+
+                                              </div>
+
+                                            </mat-tab>
+                                            <mat-tab label="Tomorrow">
+                                              <p class="fom">Schedule</p>
+
+                                              <div *ngFor="let item of meeting2">
+                                                <span class="sml ">{{item[0]}}
+                                                </span><br>
+                                                <div class="flex-container">
+
+                                                  <span class="time">🕒</span>
+                                                  <span class="sml2">{{item[1]}}</span>
+                                                  <span class="blo">🌏</span><span
+                                                    class="sml2">{{item[2]}}
+                                                  </span>
+                                                  <button class="btn">
+                                                    >
+                                                  </button>
+                                                </div>
+
+                                                <hr
+                                                  style="width:80%;text-align:left;margin-left:0">
+
+                                              </div>
+
+                                            </mat-tab>
+
+                                          </mat-tab-group>
+
+                                        </div>
+
+                                      </div>
+
+                                    </div>
+
+                                  </mat-tab>
+
+                                  <mat-tab label="Budget">
+                                    <div class="bckground">
+                                      <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                          <div class="crd2">
+                                            <span class="dis"> Budget Distribution </span>
+
+                                            <div
+                                              class="card flex justify-content-center">
+                                              <p-chart type="radar"
+                                                [data]="data6"
+                                                [options]="options6"
+                                                class="grphsmll"></p-chart>
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-5">
+                                          <div class="grid text-center"
+                                            style="row-gap: 0;">
+                                            <div class="g-col-6">
+                                              <div class="smllbox">
+                                                <div class="flex-container">
+                                                  <div
+                                                    *ngFor="let item of expenses">
+                                                    <span class="name2">
+                                                      {{item.firstname}}</span>
+
+                                                  </div>
+                                                   <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+
+                                                </div>
+                                                <div
+                                                  *ngFor="let item of expenses">
+
+                                                  <div class="dir">
+                                                    <span class="pricel">{{item.firstprice}}
+                                                    </span>
+                                                    <span class = "percent"> {{item.firstpercent}}</span>
+
+                                                  </div>
+
+                                                </div>
+
+                                              </div>
+
+                                            </div>
+                                            <div class="g-col-6">
+                                              <div class="smllbox">
+                                                <div class="flex-container">
+                                                       <div
+                                                    *ngFor="let item of expenses">
+                                                    <span class="name2">
+                                                      {{item.secondname}}</span>
+
+                                                  </div>
+                                                                                       <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+
+
+
+
+
+                                                </div>
+
+                                                <div
+                                                  *ngFor="let item of expenses">
+
+                                                  <div class="dir">
+                                                    <span class="pricel">{{item.secondprice}}
+                                                    </span>
+                                                    <span class = "percent"> {{item.secondpercent}}</span>
+
+                                                  </div>
+
+
+                                                </div>
+
+
+
+
+                                              </div>
+
+                                            </div>
+
+                                            <div class="g-col-6">
+                                              <div class="smllbox">
+                                                <div class="flex-container">
+                                                  <div
+                                                    *ngFor="let item of expenses">
+                                                    <span class="name2">
+                                                      {{item.thirdname}}</span>
+
+                                                  </div>
+
+                                                   <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu" class="kkk">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+
+
+
+                                                </div>
+                                                <div
+                                                  *ngFor="let item of expenses">
+
+                                                  <div class="dir">
+                                                    <span class="pricel">{{item.thirdprice}}
+                                                    </span>
+                                                    <span class = "percent"> {{item.thirdpercent}}</span>
+
+                                                  </div>
+
+                                                </div>
+
+
+                                              </div>
+
+                                            </div>
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+
+
+
+                                      <span class = "budgetc">Budget Details</span>
+
+                                      <div class="tablereduce">
+                                      <table class="table">
+
+                                        <thead class="wi">
+                                          <tr>
+                                            <th>Type</th>
+                                            <th>TotalBudget</th>
+                                            <th>Expenses (USD)</th>
+                                            <th>Expenses (%)</th>
+                                            <th>Remaining (USD)</th>
+                                            <th>Remaining (%)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="text-lef">
+                                          <tr *ngFor = "let item of table1">
+                                            <td><span class="ou"> • </span>  {{  item.type }}</td>
+                                          <td>{{item.total}} </td>
+                                          <td>{{item.Eusd}}</td>
+                                          <td>{{item.Ep}}</td>
+                                          <td>{{item.Rusd}}</td>
+                                          <td> {{item.Rp}}</td>
+                                          </tr>
+
+
+
+
+
+                                        </tbody>
+                                      </table>
+
+
+                                    </div>
+                                    </div>
+
+                                  </mat-tab>
+
+                                  <mat-tab label="Team 9">Content 3</mat-tab>
+                                </mat-tab-group>

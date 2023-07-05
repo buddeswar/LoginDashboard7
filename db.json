@@ -1,0 +1,539 @@
+{
+  "numbers": [
+    {
+      "summary": 21,
+      "Overdue": 17,
+      "issues": 24,
+      "fetures": 38,
+      "complete": 13,
+      "fromyesterday": 9,
+      "closedtoday": 19,
+      "Implemented": 16
+    }
+  ],
+  "meeting3": [
+    "Group Meeting hi",
+    "Coffee Break",
+    "Public Beta Release",
+    "Lunch",
+    "Dinner with David",
+    "Jane's Birthday Party",
+    "Overseer's Retirement Party"
+  ],
+  "graphdetails": [
+    {
+      "newissues": 214,
+      "closed": 75,
+      "fixed": 3,
+      "wontfix": 4,
+      "reopened": 8,
+      "needs": 6
+    }
+  ],
+  "graphdetails2": [
+    {
+      "newissues1": 197,
+      "closed1": 72,
+      "fixed1": 6,
+      "wontfix1": 11,
+      "reopened1": 6,
+      "needs1": 5
+    }
+  ],
+  "sidegraph1": [
+    {
+      "newtask1": 594,
+      "completedtask1": 287
+    }
+  ],
+  "sidegraph2": [
+    {
+      "newtask2": 526,
+      "completedtask2": 260
+    }
+  ],
+  "meetingtime": [
+    {
+      "0": "hi",
+      "1": "hellow"
+    }
+  ],
+  "meeting": [
+    [
+      "Group Meeting",
+      "10:00 AM",
+      "Office"
+    ],
+    [
+      "Coffee Break",
+      "10:30 AM",
+      "Office"
+    ],
+    [
+      "Public Beta Release",
+      "11:00 AM",
+      "Home  "
+    ],
+    [
+      "Lunch",
+      "12:10 PM",
+      "Home"
+    ],
+    [
+      "Dinner with David",
+      "05:30 PM",
+      "Room"
+    ],
+    [
+      "Jane's Birthday Party",
+      "07:30 PM",
+      "Home"
+    ],
+    [
+      "Overseer's Retirement Party",
+      "09:30 PM",
+      "Room"
+    ]
+  ],
+  "meeting2": [
+    [
+      "Marketing Meeting",
+      "09:00 AM",
+      "Office",
+      "buddhi"
+    ],
+    [
+      "Public Announcement",
+      "11:00 AM",
+      "Room"
+    ],
+    [
+      "Lunch",
+      "12:10 PM",
+      "Office"
+    ],
+    [
+      "Meeting with Beta Testers",
+      "03:00 PM",
+      "Room"
+    ],
+    [
+      "Live Stream",
+      "05:30 PM",
+      "Office"
+    ],
+    [
+      "Release Party",
+      "07:30 PM",
+      "Room"
+    ],
+    [
+      "CEO's Private Party",
+      "09:30 PM",
+      "Office"
+    ]
+  ],
+  "expenses": [
+    {
+      "firstname": "Weekly Expenses",
+      "firstprice": " $17,663.00 ",
+      "firstpercent": "2% below projected",
+      "secondname": "Monthly Expense",
+      "secondprice": " $54,663.00",
+      "secondpercent": "4% above projected",
+      "thirdname": "Yearly Expenses",
+      "thirdprice": " $648,813.00",
+      "thirdpercent": "3% above projected"
+    }
+  ],
+  "table1": [
+    {
+      "type": "concept",
+      "total": "$14,880.00",
+      "Eusd": "$14,000.00",
+      "Ep": "94.08%",
+      "Rusd": "$880.00",
+      "Rp": "5.92%"
+    },
+    {
+      "type": "Design",
+      "total": "$21,080.00",
+      "Eusd": "$17,240.34",
+      "Ep": "81.78%",
+      "Rusd": "$3,839.66",
+      "Rp": "18.22%"
+    },
+    {
+      "type": "Devolopment",
+      "total": "$34,720.00",
+      "Eusd": "$3,518.00",
+      "Ep": "10.13%",
+      "Rusd": "$31,202.00",
+      "Rp": "89.87%"
+    },
+    {
+      "type": "Extras",
+      "total": "$18,600.00",
+      "Eusd": "$0.00",
+      "Ep": "0.00%",
+      "Rusd": "$18,600.00",
+      "Rp": "100%"
+    },
+    {
+      "type": "Marketing",
+      "total": "$34,720.00",
+      "Eusd": "$19,859.84",
+      "Ep": "57.02%",
+      "Rusd": "$14,860.16",
+      "Rp": "42.8%"
+    }
+  ],
+  "charttarget": [
+    {
+      "name": "Conversions",
+      "price": "4,123",
+      "percent": "2%  below target"
+    },
+    {
+      "name": "Impressions",
+      "price": "46,085",
+      "percent": "4%  below target"
+    },
+    {
+      "name": "Visits",
+      "price": "62,083",
+      "percent": "4%  below target"
+    }
+  ],
+  "thisyeargd": [
+    [
+      "3968,4065,3901,2574,4378,4769,5659,5435,4348,3212,2918"
+    ]
+  ],
+  "graphvp": [
+    {
+      "name": "Overall Score",
+      "score": "472",
+      "percent": "↑ 42.9%"
+    },
+    {
+      "name": "Average Ratio",
+      "score": "45%",
+      "percent": "↓ 13.1%"
+    },
+    {
+      "name": "Predicted Ratio",
+      "score": "55%",
+      "percent": "↑ 22.2%"
+    }
+  ],
+  "youradu": [
+    {
+      "name1": "New",
+      "price1": "36,868",
+      "percent1": "80%",
+      "name11": "Retur..",
+      "price11": "9,217",
+      "percent11": "20%",
+      "mainname1": "New vs. Returning",
+      "name2": "Male",
+      "price2": "25,347",
+      "percent2": "55%",
+      "name22": "Female",
+      "price22": "20,738",
+      "percent22": "45%",
+      "mainname2": "Gender",
+      "name3": "Under 30",
+      "price3": "16,130",
+      "percent3": "35%",
+      "name33": "Over 30",
+      "price33": "29,955",
+      "percent33": "65%",
+      "mainname3": "Age",
+      "name4": "English",
+      "price4": "11,521",
+      "percent4": "25%",
+      "name44": "Other",
+      "price44": "34,564",
+      "percent44": "75%",
+      "mainname4": "Language"
+    }
+  ],
+  "statements": [
+    {
+      "name": "Previous Statement",
+      "date": " Paid on 15 June 2023",
+      "one1": "Card Limit",
+      "one1p": "$34,500.00",
+      "one2": "Spent",
+      "one2p": "$27,221.21",
+      "one3": "Minimum",
+      "one3p": "$7,331.94"
+    },
+    {
+      "name": "Current Statement",
+      "date": " Must be paid before 15 July 2023 ",
+      "one1": "Card Limit",
+      "one1p": "$34,500.00",
+      "one2": "Spent",
+      "one2p": "$39,819.41",
+      "one3": "Minimum",
+      "one3p": "$9,112.51"
+    }
+  ],
+  "balence": [
+    {
+      "price": "38.33%",
+      "name": "Average Monthly Growth",
+      "price2": "$45,332.00",
+      "name2": "Average Monthly Income"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "528651571NT",
+      "date": " Dec 25, 2019",
+      "name": " Marsha Chambers",
+      "amount": " $1,828.16",
+      "status": "pending"
+    },
+    {
+      "id": "421436904YT",
+      "date": " Dec 18, 2019 ",
+      "name": " Nita Hebert ",
+      "amount": "-$1,042.82",
+      "status": "completed"
+    },
+    {
+      "id": "884960091RT ",
+      "date": "Nov 29, 2019 ",
+      "name": "Charmaine Jackson ",
+      "amount": "$1,647.55 ",
+      "status": "completed"
+    },
+    {
+      "id": "361402213NT",
+      "date": "Nov 24, 2019 ",
+      "name": " Maura Carey ",
+      "amount": "-$927.43",
+      "status": "completed"
+    },
+    {
+      "id": "528651571NT ",
+      "date": "Oct 08, 2019",
+      "name": "Morgan Page",
+      "amount": "$1,358.75",
+      "status": "completed"
+    },
+    {
+      "id": "528651571NT",
+      "date": " Dec 25, 2019",
+      "name": " Marsha Chambers",
+      "amount": " $1,828.16",
+      "status": "pending"
+    },
+    {
+      "id": "421436904YT",
+      "date": " Dec 18, 2019 ",
+      "name": " Nita Hebert ",
+      "amount": "-$1,042.82",
+      "status": "completed"
+    }
+  ],
+  "Budget": [
+    {
+      "first": "$11,763.34",
+      "firstp": "2.6%",
+      "second": "$10,974.12",
+      "secondp": "12.7%",
+      "third": "$1,789.22",
+      "thirdp": "105.7%"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Buddhi",
+      "lastName": "Bodapati",
+      "email": "buddhi@gmail.com",
+      "mobile": "6304380552",
+      "salary": "30,000"
+    },
+    {
+      "id": 2,
+      "firstName": "Anil Kumar",
+      "lastName": "Bodapari",
+      "email": "anil@gmail.com",
+      "mobile": "7902445464",
+      "salary": "67,000"
+    },
+    {
+      "id": 3,
+      "firstName": "raju",
+      "lastName": "sula",
+      "email": "sula@gmail.com",
+      "mobile": "6304356435",
+      "salary": "34,000"
+    },
+    {
+      "id": 4,
+      "firstName": "sula",
+      "lastName": "suresh",
+      "email": "sula@gmail.com",
+      "mobile": "958458353",
+      "salary": "56,000"
+    },
+    {
+      "id": 5,
+      "firstName": "mohan",
+      "lastName": "sovvala",
+      "email": "mohan@gmail.com",
+      "mobile": "9564565756",
+      "salary": "56,888"
+    },
+    {
+      "id": 6,
+      "firstName": "suresh",
+      "lastName": "koladi",
+      "email": "suresh@gmail.com",
+      "mobile": "6304380552",
+      "salary": "45,999"
+    },
+    {
+      "id": 7,
+      "firstName": "Durga",
+      "lastName": "Bodapati",
+      "email": "durga@gmail.com5",
+      "mobile": "984564546",
+      "salary": "56,000"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "h",
+      "email": "h",
+      "password": "h",
+      "id": 1
+    },
+    {
+      "fullname": "k",
+      "email": "k",
+      "password": "k",
+      "id": 2
+    },
+    {
+      "fullname": "a",
+      "email": "a",
+      "password": "a",
+      "id": 3
+    },
+    {
+      "fullname": "b",
+      "email": "b",
+      "password": "b",
+      "id": 4
+    },
+    {
+      "fullname": "b",
+      "email": "b",
+      "password": "b",
+      "id": 5
+    },
+    {
+      "fullname": "king",
+      "email": "king",
+      "password": "king",
+      "id": 6
+    },
+    {
+      "fullname": "w",
+      "email": "w",
+      "password": "w",
+      "id": 7
+    },
+    {
+      "fullname": "t",
+      "email": "t",
+      "password": "t",
+      "id": 8
+    },
+    {
+      "fullname": "rt",
+      "email": "rt",
+      "password": "rt",
+      "id": 9
+    },
+    {
+      "fullname": "ku",
+      "email": "ku",
+      "password": "ku",
+      "id": 10
+    },
+    {
+      "fullname": "t",
+      "email": "t",
+      "password": "t",
+      "id": 11
+    },
+    {
+      "fullname": "u",
+      "email": "u",
+      "password": "u",
+      "id": 12
+    },
+    {
+      "fullname": "u",
+      "email": "u",
+      "password": "u",
+      "id": 13
+    },
+    {
+      "fullname": "hellow",
+      "email": "hellow",
+      "password": "hellow",
+      "id": 14
+    },
+    {
+      "fullname": "rt",
+      "email": "rt",
+      "password": "rt",
+      "id": 15
+    },
+    {
+      "fullname": "fu",
+      "email": "fu",
+      "password": "fu",
+      "id": 16
+    },
+    {
+      "fullname": "r",
+      "email": "r",
+      "password": "r",
+      "id": 17
+    },
+    {
+      "fullname": "io",
+      "email": "io",
+      "password": "io",
+      "id": 18
+    },
+    {
+      "fullname": "vb",
+      "email": "vb",
+      "password": "vb",
+      "id": 19
+    },
+    {
+      "fullname": "re",
+      "email": "re",
+      "password": "re",
+      "id": 20
+    },
+    {
+      "fullname": "toy",
+      "email": "toy",
+      "password": "toy",
+      "id": 21
+    }
+  ]
+}

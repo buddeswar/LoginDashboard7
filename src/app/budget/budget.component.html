@@ -1,0 +1,210 @@
+<div class="backmain3">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="down">
+      <p class="ds"> Finance dashboard<br>
+      <span class="sml">
+ Keep track of your financial status     </span> </p>
+    </div>
+
+
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="down">
+            <button pButton pRipple label="Report " class="p-button-success" class = "di"></button>
+      <p-button label="⚙️  Settings" styleClass="p-button-raised" class="left"></p-button>
+
+      <p-button label="Export" styleClass="p-button-outlined"></p-button>
+    </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="grid text-left" style="row-gap: 0;">
+      <div *ngFor = "let item of  statements">
+          <div class="g-col-6 smllbox2 ">
+              <span class="pr">{{item.name}}</span>
+              <span>
+                 <button mat-icon-button [matMenuTriggerFor]="menu" class = "button"
+                 aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                 </button>
+                  <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+             <span>View Statements</span>
+                </button>
+             <button mat-menu-item>
+                  <span>Spending Breakdown </span>
+              </button>
+                  <button mat-menu-item>
+             <span>Tax Breakdown </span>
+                     </button>
+                    </mat-menu>
+              </span>
+              <P class="green">{{item.date}}</P>
+
+            <span class="mrg2">{{item.one1}}</span>
+             <span>{{item.one2}}</span>
+              <span class="mrg3"> {{item.one3}}</span>
+                   <br>
+                <div class="pd3">
+                   <span class = "hu2"
+                        >{{item.one1p}}</span>
+                      <span class="hu4">
+                       {{item.one2p}}
+
+                         </span>
+                       <span class="hu3"> {{item.one3p}}</span>
+                </div>
+
+
+
+          </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="continerwhite">
+      <div class="card">
+        <p class="th">
+          Account Balance
+        </p>
+        <span class="th2">Monthly balance growth and avg. monthly income <span class="month"> 12 Months</span></span>
+        <div *ngFor = "let item of balence" class="mr6">
+          <span class="price">{{item.price}} <span class="price2"> {{item.price2}}</span> </span><br>
+             <span>{{item.name}}<span class="hu">{{item.name2}} </span></span>
+         </div>
+
+    <p-chart type="line" [data]="data" [options]="options" class="width"></p-chart>
+</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-12 col-lg-7">
+    <div class="container22">
+      <h2 class="one">Recent transactions </h2>
+      <P class="one2">1 pending, 4 completed </P>
+      <table class="table">
+        <thead class="left">
+           <tr>
+              <th>ID </th>
+              <th> Date </th>
+              <th> Name </th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor = "let item of  trance" class="pd4">
+            <td>{{item.id}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.amount}}</td>
+            <td>{{item.status}}</td>
+
+          </tr>
+
+        </tbody>
+
+
+      </table>
+
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-5">
+    <div class="container33">
+      <span><h2 class="two">Budget</h2> </span>
+      <P class="two2">Monthly budget summary</P>
+      <div class="left777">
+         Last month; you had 223 expense transactions,<br> 12 savings entries and 4 bills.
+      </div>
+
+       <p class="exp">Expenses</p>
+      <span><img class="img" src ="https://cdn.iconscout.com/icon/premium/png-512-thumb/bills-17-771825.png?f=avif&w=512">
+      <span *ngFor = "let item of budget">
+        <span class="nme">{{item.first}}</span>
+        <span class="nme2">
+          {{item.firstp}} <span class="ar"> ↓</span>
+
+
+      </span>
+      </span>
+
+
+
+
+         </span>
+
+
+
+
+
+<p class="exp">Savings</p>
+      <span><img class="img2" src ="https://cdn.iconscout.com/icon/free/png-512/free-bills-7847108-6394419.png?f=avif&w=512">
+      <span *ngFor = "let item of budget">
+        <span class="nme">{{item.second}}</span>
+        <span class="nme2">
+          {{item.secondp}} <span class="ar"> ↓</span>
+
+
+      </span>
+      </span>
+
+
+
+
+         </span>
+
+
+
+
+
+<p class="exp">Bills</p>
+      <span><img class="img3" src ="https://cdn.iconscout.com/icon/premium/png-512-thumb/bills-16-621294.png?f=avif&w=512">
+      <span *ngFor = "let item of budget">
+        <span class="nme">{{item.second}}</span>
+        <span class="nme2">
+          {{item.secondp}} <span class="ar"> ↓</span>
+
+
+      </span>
+      </span>
+
+
+
+
+         </span>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+
+
+
+
