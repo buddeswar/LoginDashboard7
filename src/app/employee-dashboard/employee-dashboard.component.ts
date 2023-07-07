@@ -63,6 +63,7 @@ this.api.postEmployee(this.employeeModelObj)
     })
   }
 
+
   deleteEmployee(row: any) {
     this.api.deleteEmployee(row.id).subscribe(
       res => {
@@ -73,7 +74,7 @@ this.api.postEmployee(this.employeeModelObj)
 
   }
 
-  onEdit(row: any) {
+onEdit(row: any) {
     this.employeeModelObj.id = row.id
     this.formValue.controls['firstName'].setValue(row.firstName)
     this.formValue.controls['lastName'].setValue(row.lastName)
@@ -82,6 +83,7 @@ this.api.postEmployee(this.employeeModelObj)
     this.formValue.controls['salary'].setValue(row.salary)
 
   }
+
   updateEmployeeDetails() {
     this.employeeModelObj.firstName = this.formValue.value.firstName;
     this.employeeModelObj.lastName = this.formValue.value.lastName;

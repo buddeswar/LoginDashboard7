@@ -398,14 +398,6 @@
       "email": "suresh@gmail.com",
       "mobile": "6304380552",
       "salary": "45,999"
-    },
-    {
-      "id": 7,
-      "firstName": "Durga",
-      "lastName": "Bodapati",
-      "email": "durga@gmail.com5",
-      "mobile": "984564546",
-      "salary": "56,000"
     }
   ],
   "signupUsers": [
@@ -534,6 +526,42 @@
       "email": "toy",
       "password": "toy",
       "id": 21
+    },
+    {
+      "fullname": "buddhi",
+      "email": "buddhi@gmail.com",
+      "password": "buddhi",
+      "id": 22
+    },
+    {
+      "fullname": "Buddhi",
+      "email": "Buddhi@gmail.com",
+      "password": "098",
+      "id": 23
+    },
+    {
+      "fullname": "suresh",
+      "email": "suresh@gmail.com",
+      "password": "suresh",
+      "id": 24
+    },
+    {
+      "fullname": "ik",
+      "email": "ik",
+      "password": "ik",
+      "id": 25
+    },
+    {
+      "fullname": "suresh",
+      "email": "suresh@gmail.com",
+      "password": "suresh",
+      "id": 26
+    },
+    {
+      "fullname": "suresh",
+      "email": "suresh@gmail.com",
+      "password": "suresh",
+      "id": 27
     }
   ]
 }

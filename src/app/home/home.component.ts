@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit{
     options3: any;
 
   numbers: any[] = []
-  
+
 
   data: any;
   options: any;
@@ -75,6 +75,7 @@ export class HomeComponent implements OnInit{
 
 
   }
+
   ngOnInit(): void {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
@@ -87,6 +88,7 @@ export class HomeComponent implements OnInit{
                     type: 'bar',
                     label: 'New Issues',
 
+                    
                     backgroundColor: documentStyle.getPropertyValue('--blue-500'),
                     data: [42, 28, 42, 34, 20, 25, 22]
                 },
